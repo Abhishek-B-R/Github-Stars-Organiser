@@ -1,0 +1,5 @@
+{
+  "name": "StarGazer",
+  "description": "A smart GitHub Star manager that allows users to organize starred repositories into categories with custom colors. Features AI-powered auto-categorization and a Chrome Extension dashboard style interface.",
+  "requestFramePermissions": []
+}

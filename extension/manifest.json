@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "StarGazer",
+  "version": "1.0.0",
+  "description": "Organize your GitHub stars into categories.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://github.com/*"
+  ],
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "StarGazer"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
